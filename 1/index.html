@@ -9,9 +9,37 @@ Tip: Investigar el evento window.onload
 <html lang="en" dir="ltr">
   <head>
     <meta charset="utf-8">
-    <title></title>
+    <title>Imagenes</title>
   </head>
   <body>
+  	<input id="button" type="button" name="" value="Boton">
+  	<img src="https://source.unsplash.com/collection/332024/200x300">
+  	<img src="https://source.unsplash.com/collection/332024/200x300">
+  	<img src="https://source.unsplash.com/collection/332024/200x300">
+  	<img src="https://source.unsplash.com/collection/332024/200x300">
+  	<img src="https://source.unsplash.com/collection/332024/200x300">
+  	<img src="https://source.unsplash.com/collection/332024/200x300">
+  	<img src="https://source.unsplash.com/collection/332024/200x300">
+  	<img src="https://source.unsplash.com/collection/332024/200x300">
+  	<img src="https://source.unsplash.com/collection/332024/200x300">
+  	<img src="https://source.unsplash.com/collection/332024/200x300">
+  	<img src="https://source.unsplash.com/collection/332024/200x300">
+  	<img src="https://source.unsplash.com/collection/332024/200x300">
+  <script src="js/jquery-3.3.1.min.js"></script>
+  <script type="text/javascript">
+  	//Carga DOM
+  	$(document).ready(function(){
+  		alert("DOM ready!");
+  	});
 
+  	//Carga imágenes
+  	$(window).on("load",function(){
+  		alert("Imágenes listas");
+  	});
+
+  	$("#boton").on("click", function(){
+  		alert("Botón presionado");
+  	});
+  </script>
   </body>
 </html>

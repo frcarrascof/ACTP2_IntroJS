@@ -14,6 +14,34 @@ de un segundo, al volver hacer click debe volver a estar en blanco y negro.
     <title></title>
   </head>
   <body>
+	   	<img src="https://source.unsplash.com/collection/332024/200x300">
+	  	<img src="https://source.unsplash.com/collection/332024/200x300">
+	  	<img src="https://source.unsplash.com/collection/332024/200x300">
+	  	<img src="https://source.unsplash.com/collection/332024/200x300">
+	  	<img src="https://source.unsplash.com/collection/332024/200x300">
+	  	<img src="https://source.unsplash.com/collection/332024/200x300">
+	  	<img src="https://source.unsplash.com/collection/332024/200x300">
+	  	<img src="https://source.unsplash.com/collection/332024/200x300">
+	  	<img src="https://source.unsplash.com/collection/332024/200x300">
+	  	<img src="https://source.unsplash.com/collection/332024/200x300">
+	  	<img src="https://source.unsplash.com/collection/332024/200x300">
+	  	<img src="https://source.unsplash.com/collection/332024/200x300">
+  <script src="js/jquery-3.3.1.min.js"></script>
+  <script type="text/javascript">
+  	//Carga DOM
+  	$(document).ready(function(){
 
+  		$('img').css('filter', 'grayscale(100%)');
+  		$('img').css('transition', 'all 1s');
+
+  		$('img').click(function(evt){
+  			console.log(evt.currentTarget);
+  			$('img').css('filter', 'grayscale(100%)');
+  			$('img').css('transition', 'all 3s');
+
+  			$(evt.currentTarget).css('filter', 'grayscale(0%)');
+  		});
+  	});
+  </script>
   </body>
 </html>
